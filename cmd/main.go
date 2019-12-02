@@ -21,6 +21,6 @@ func main() {
 	r.HandleFunc("/welcome/{name}", handlers.WelcomeWithNameHandler)
 
 	// Log starting of the service
-	log.Print("Starting DataService...")
+	log.Print("Started DataService!")
 	log.Fatal(http.ListenAndServe(":8000", r))
 }
